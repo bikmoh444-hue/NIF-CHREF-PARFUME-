@@ -28,5 +28,6 @@ insert into public.navigation_items (label_fr, label_ar, href, sort_order, is_ac
   ('About Us', 'من نحن', '/heritage', 2, true),
   ('Collection', 'المجموعة', '/#collection', 3, true),
   ('Homme', 'رجال', '/homme', 4, true),
-  ('Femme', 'نساء', '/femme', 5, true)
+  ('Femme', 'نساء', '/femme', 5, true),
+  ('Contact', 'Contact', '/#contact', 6, true)
 on conflict do nothing;

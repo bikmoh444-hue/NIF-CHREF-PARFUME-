@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { Menu, Search, ShoppingBag, X } from "lucide-react";
+import { Menu, ShoppingBag, X } from "lucide-react";
 import { useEffect, useState } from "react";
 import { useCartStore } from "@/lib/cart-store";
 import LanguageSwitcher from "@/components/LanguageSwitcher";
@@ -12,7 +12,8 @@ const nav = [
   ["About Us", "/heritage"],
   ["Collection", "/#collection"],
   ["Homme", "/homme"],
-  ["Femme", "/femme"]
+  ["Femme", "/femme"],
+  ["Contact", "/#contact"]
 ];
 
 export default function Header() {
@@ -29,7 +30,7 @@ export default function Header() {
 
   return (
     <header className="sticky top-0 z-50 border-b border-line bg-white/95 backdrop-blur">
-      <div className="mx-auto flex max-w-6xl items-center justify-between px-4 py-2.5 lg:px-6">
+      <div className="mx-auto grid max-w-6xl grid-cols-[1fr_auto] items-center px-4 py-2.5 lg:grid-cols-[1fr_auto_1fr] lg:px-6">
         <Link href="/" className="font-serif text-lg font-semibold leading-none tracking-[0.2em] text-ink">
           NIF<br />CHRIF
         </Link>
@@ -42,11 +43,7 @@ export default function Header() {
           ))}
         </nav>
 
-        <div className="hidden items-center gap-3 lg:flex">
-          <label className="flex items-center gap-2 border border-line px-2.5 py-1.5 text-xs text-muted">
-            <Search className="h-4 w-4" />
-            <input className="w-28 bg-transparent outline-none" placeholder="Rechercher..." />
-          </label>
+        <div className="hidden items-center justify-end gap-3 lg:flex">
           <Link href="/panier" className="relative border border-line p-1.5" aria-label="Panier">
             <ShoppingBag className="h-4 w-4" />
             {mounted && count > 0 && (

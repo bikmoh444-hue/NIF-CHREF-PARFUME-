@@ -20,7 +20,7 @@ export default function ContactForm() {
   }
 
   return (
-    <section className="bg-cream px-4 py-11">
+    <section id="contact" className="bg-cream px-4 py-11">
       <div className="mx-auto grid max-w-6xl gap-8 lg:grid-cols-[0.9fr_1.1fr] lg:px-6">
         <div>
           <p className="luxury-label">Rejoignez l'Exclusivité</p>
