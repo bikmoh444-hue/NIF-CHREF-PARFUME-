@@ -17,7 +17,7 @@ type Props = {
   className?: string;
 };
 
-export default function AddToCartButton({ item, quantity = 1, label = "ADD TO BAG", className = "" }: Props) {
+export default function AddToCartButton({ item, quantity = 1, label = "Ajouter au panier", className = "" }: Props) {
   const addItem = useCartStore((state) => state.addItem);
   return (
     <button onClick={() => addItem(item, quantity)} className={`inline-flex items-center justify-center gap-1.5 border border-ink bg-ink px-3 py-2 text-xs font-semibold uppercase tracking-[0.1em] text-white hover:border-gold hover:bg-gold ${className}`}>

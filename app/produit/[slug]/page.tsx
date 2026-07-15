@@ -15,7 +15,7 @@ export default async function ProductPage({ params }: { params: { slug: string }
           </div>
         </div>
         <div className="flex flex-col justify-center">
-          {product.is_bestseller && <span className="mb-4 w-max bg-gold px-3 py-1 text-xs font-bold text-white">BEST SELLER</span>}
+          {product.is_bestseller && <span className="mb-4 w-max bg-gold px-3 py-1 text-xs font-bold text-white">Meilleure vente</span>}
           <p className="luxury-label">NIF CHRIF</p>
           <h1 className="mt-3 font-serif text-6xl text-ink">{product.name_fr}</h1>
           <p className="mt-5 text-2xl text-gold">{Number(product.price).toFixed(0)} MAD</p>

@@ -4,7 +4,7 @@ import { FormEvent, useState } from "react";
 import { createClient } from "@/lib/supabase/client";
 
 export default function AdminSettings() {
-  const [message, setMessage] = useState("Supabase ne permet pas de créer un utilisateur Auth avec la clé anon depuis le navigateur. Utilisez Supabase Dashboard pour les admins, ou ajoutez une route serveur avec service role.");
+  const [message, setMessage] = useState("Supabase ne permet pas de créer un utilisateur Auth avec la clé anon depuis le navigateur. Utilisez le tableau de bord Supabase pour les admins, ou ajoutez une route serveur avec service role.");
   async function updatePassword(event: FormEvent<HTMLFormElement>) {
     event.preventDefault();
     const form = new FormData(event.currentTarget);

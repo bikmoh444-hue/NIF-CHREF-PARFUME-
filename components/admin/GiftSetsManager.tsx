@@ -41,7 +41,7 @@ export default function GiftSetsManager({ initialSets }: { initialSets: GiftSet[
         <textarea name="description_fr" defaultValue={v.description_fr ?? ""} placeholder="Description FR" className="border border-line px-3 py-2" />
         <textarea name="description_ar" defaultValue={v.description_ar ?? ""} placeholder="Description AR" className="border border-line px-3 py-2" />
         <input name="price" type="number" defaultValue={v.price} className="border border-line px-3 py-2" />
-        <input name="image_url" defaultValue={v.image_url ?? ""} placeholder="Image URL" className="border border-line px-3 py-2" />
+        <input name="image_url" defaultValue={v.image_url ?? ""} placeholder="URL de l'image" className="border border-line px-3 py-2" />
         <input name="included_products" defaultValue={(v.included_products ?? []).join(", ")} placeholder="Produits inclus, séparés par virgules" className="border border-line px-3 py-2" />
         <label className="flex gap-2 text-sm"><input name="is_active" type="checkbox" defaultChecked={v.is_active ?? true} /> Actif</label>
         <button className="bg-ink px-4 py-3 text-sm font-semibold uppercase tracking-[0.15em] text-white">Enregistrer</button>

@@ -167,5 +167,5 @@ export const demoContent: SiteContent[] = [
 
 export const demoTranslations: Translation[] = [
   { key: "hero_primary", value_fr: "DÉCOUVRIR LA COLLECTION", value_ar: "اكتشف المجموعة" },
-  { key: "hero_secondary", value_fr: "SIGNATURE SETS", value_ar: "أطقم التوقيع" }
+  { key: "hero_secondary", value_fr: "COFFRETS SIGNATURE", value_ar: "أطقم التوقيع" }
 ];

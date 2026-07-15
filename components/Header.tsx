@@ -8,8 +8,8 @@ import { useCartStore } from "@/lib/cart-store";
 import LanguageSwitcher from "@/components/LanguageSwitcher";
 
 const nav = [
-  ["Home", "/"],
-  ["About Us", "/heritage"],
+  ["Accueil", "/"],
+  ["À propos", "/heritage"],
   ["Collection", "/#collection"],
   ["Homme", "/homme"],
   ["Femme", "/femme"],

@@ -4,7 +4,7 @@ export default async function AdminPage() {
   const stats = await getAdminStats();
   return (
     <main className="p-5 lg:p-8">
-      <p className="luxury-label">Dashboard</p>
+      <p className="luxury-label">Tableau de bord</p>
       <h1 className="mt-2 font-serif text-5xl">Vue d'ensemble</h1>
       <div className="mt-8 grid gap-4 md:grid-cols-4">
         <Stat label="Commandes" value={stats.orders.length} />

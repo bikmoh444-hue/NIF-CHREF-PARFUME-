@@ -34,6 +34,6 @@ on conflict (key) do update set value_fr = excluded.value_fr, value_ar = exclude
 
 insert into public.translations (key, value_fr, value_ar) values
   ('hero_primary', 'DÉCOUVRIR LA COLLECTION', 'اكتشف المجموعة'),
-  ('hero_secondary', 'SIGNATURE SETS', 'أطقم التوقيع'),
+  ('hero_secondary', 'COFFRETS SIGNATURE', 'أطقم التوقيع'),
   ('checkout', 'Passer la commande', 'إتمام الطلب')
 on conflict (key) do update set value_fr = excluded.value_fr, value_ar = excluded.value_ar;

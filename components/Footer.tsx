@@ -19,23 +19,23 @@ export default function Footer() {
           <div className="mt-5 flex flex-col gap-3 text-sm text-white/75">
             <Link href="/#collection">La Collection</Link>
             <Link href="/heritage">Nos Engagements</Link>
-            <Link href="/heritage">Store Locator</Link>
+            <Link href="/heritage">Nos boutiques</Link>
             <Link href="/checkout">Devenir Partenaire</Link>
           </div>
         </div>
         <div>
-          <h3 className="luxury-label">Support</h3>
+          <h3 className="luxury-label">Assistance</h3>
           <div className="mt-5 flex flex-col gap-3 text-sm text-white/75">
-            <Link href="/heritage">Privacy Policy</Link>
-            <Link href="/heritage">Shipping & Returns</Link>
-            <Link href="/checkout">Contact Us</Link>
+            <Link href="/heritage">Politique de confidentialité</Link>
+            <Link href="/heritage">Livraison et retours</Link>
+            <Link href="/#contact">Contact</Link>
             <Link href="/heritage">FAQ</Link>
           </div>
         </div>
         <div>
           <h3 className="luxury-label">Paiement</h3>
           <div className="mt-5 flex gap-3 text-white/80"><CreditCard /><Instagram /><Facebook /></div>
-          <p className="mt-6 text-sm text-white/60">Cash on Delivery disponible partout au Maroc.</p>
+          <p className="mt-6 text-sm text-white/60">Paiement à la livraison disponible partout au Maroc.</p>
         </div>
       </div>
       <div className="border-t border-white/10 px-4 py-5 text-center text-xs text-white/50">© {new Date().getFullYear()} NIF CHRIF. Tous droits réservés.</div>

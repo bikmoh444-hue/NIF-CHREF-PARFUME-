@@ -13,7 +13,7 @@ export default async function AdminGiftSetsPage() {
 function AdminGiftSetsShell({ sets }: { sets: GiftSet[] }) {
   return (
     <main className="p-5 lg:p-8">
-      <p className="luxury-label">Signature Sets</p>
+      <p className="luxury-label">Coffrets Signature</p>
       <h1 className="mt-2 font-serif text-5xl">Coffrets</h1>
       <GiftSetsManager initialSets={sets} />
     </main>

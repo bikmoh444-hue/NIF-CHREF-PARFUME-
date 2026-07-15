@@ -157,8 +157,8 @@ create policy "Public read navigation_items" on public.navigation_items for sele
 create policy "Admin full access navigation_items" on public.navigation_items for all using (auth.role() = 'authenticated') with check (auth.role() = 'authenticated');
 
 insert into public.navigation_items (label_fr, label_ar, href, sort_order, is_active) values
-  ('Home', 'الرئيسية', '/', 1, true),
-  ('About Us', 'من نحن', '/heritage', 2, true),
+  ('Accueil', 'الرئيسية', '/', 1, true),
+  ('À propos', 'من نحن', '/heritage', 2, true),
   ('Collection', 'المجموعة', '/#collection', 3, true),
   ('Homme', 'رجال', '/homme', 4, true),
   ('Femme', 'نساء', '/femme', 5, true),

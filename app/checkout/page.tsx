@@ -71,8 +71,8 @@ export default function CheckoutPage() {
     <main className="bg-cream px-4 py-12 lg:px-6">
       <div className="mx-auto grid max-w-5xl gap-8 lg:grid-cols-[1fr_340px]">
         <form onSubmit={submit} className="grid gap-3 bg-white p-5 shadow-soft">
-          <p className="luxury-label">Cash on Delivery</p>
-          <h1 className="font-serif text-4xl">Checkout</h1>
+          <p className="luxury-label">Paiement à la livraison</p>
+          <h1 className="font-serif text-4xl">Commande</h1>
           <input name="name" required placeholder="Nom complet" className="border border-line px-3 py-2.5 outline-gold" />
           <input name="phone" required placeholder="Telephone" className="border border-line px-3 py-2.5 outline-gold" />
           <input name="city" required placeholder="Ville" className="border border-line px-3 py-2.5 outline-gold" />

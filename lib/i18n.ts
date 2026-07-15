@@ -8,7 +8,7 @@ export const defaultTranslations = {
   nav_men: { fr: "Homme", ar: "رجال" },
   nav_women: { fr: "Femme", ar: "نساء" },
   nav_heritage: { fr: "L'Héritage", ar: "الإرث" },
-  nav_sets: { fr: "Signature Sets", ar: "أطقم التوقيع" },
+  nav_sets: { fr: "Coffrets Signature", ar: "أطقم التوقيع" },
   search: { fr: "Rechercher...", ar: "بحث..." },
   add_to_bag: { fr: "Ajouter au panier", ar: "أضف إلى السلة" },
   checkout: { fr: "Passer la commande", ar: "إتمام الطلب" }

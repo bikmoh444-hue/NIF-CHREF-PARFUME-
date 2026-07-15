@@ -56,9 +56,9 @@ export default function ProductsManager({ initialProducts }: { initialProducts: 
         <textarea name="description_ar" defaultValue={values.description_ar ?? ""} placeholder="Description AR" className="border border-line px-3 py-2" />
         <input name="price" type="number" defaultValue={values.price} required className="border border-line px-3 py-2" />
         <input name="stock" type="number" defaultValue={values.stock ?? 100} className="border border-line px-3 py-2" />
-        <input name="image_url" defaultValue={values.image_url ?? ""} placeholder="Image URL Supabase Storage" className="border border-line px-3 py-2" />
+        <input name="image_url" defaultValue={values.image_url ?? ""} placeholder="URL de l'image Supabase Storage" className="border border-line px-3 py-2" />
         <select name="category_id" defaultValue={values.category_id ?? MEN_ID} className="border border-line px-3 py-2"><option value={MEN_ID}>Homme</option><option value={WOMEN_ID}>Femme</option></select>
-        <label className="flex gap-2 text-sm"><input name="is_bestseller" type="checkbox" defaultChecked={values.is_bestseller} /> Best Seller</label>
+        <label className="flex gap-2 text-sm"><input name="is_bestseller" type="checkbox" defaultChecked={values.is_bestseller} /> Meilleure vente</label>
         <label className="flex gap-2 text-sm"><input name="is_active" type="checkbox" defaultChecked={values.is_active ?? true} /> Actif</label>
         {message && <p className="text-sm text-gold">{message}</p>}
         <button className="bg-ink px-4 py-3 text-sm font-semibold uppercase tracking-[0.15em] text-white">Enregistrer</button>

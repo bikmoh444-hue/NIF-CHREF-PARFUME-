@@ -30,7 +30,7 @@ export default function ContactForm() {
             <a href="https://instagram.com" className="border border-ink p-3"><Instagram /></a>
             <a href="https://facebook.com" className="border border-ink p-3"><Facebook /></a>
             <a href="https://tiktok.com" className="border border-ink px-4 py-3 text-sm font-semibold">TikTok</a>
-            <a href="https://wa.me/" className="inline-flex items-center gap-2 bg-ink px-4 py-3 text-sm font-semibold text-white"><Send className="h-4 w-4" /> WHATSAPP</a>
+            <a href="https://wa.me/" className="inline-flex items-center gap-2 bg-ink px-4 py-3 text-sm font-semibold text-white"><Send className="h-4 w-4" /> WhatsApp</a>
             <a href="tel:" className="inline-flex items-center gap-2 border border-ink px-4 py-3 text-sm font-semibold"><Phone className="h-4 w-4" /> APPELEZ-NOUS</a>
           </div>
         </div>

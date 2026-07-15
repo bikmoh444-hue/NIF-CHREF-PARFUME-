@@ -22,7 +22,7 @@ export default async function HomePage() {
           <h1 className="mt-3 font-serif text-4xl font-semibold tracking-[0.14em] md:text-6xl">{contentValue(content, "hero_title", "NIF CHRIF")}</h1>
           <div className="mt-6 flex flex-col justify-center gap-3 sm:flex-row">
             <Link href="#collection" className="bg-white px-5 py-2.5 text-[11px] font-bold uppercase tracking-[0.14em] text-ink">DÉCOUVRIR LA COLLECTION</Link>
-            <Link href="/signature-sets" className="border border-white px-5 py-2.5 text-[11px] font-bold uppercase tracking-[0.14em] text-white">SIGNATURE SETS</Link>
+            <Link href="/signature-sets" className="border border-white px-5 py-2.5 text-[11px] font-bold uppercase tracking-[0.14em] text-white">COFFRETS SIGNATURE</Link>
           </div>
         </div>
         <span className="absolute bottom-8 animate-bounce text-3xl text-white/80">⌄</span>
@@ -33,10 +33,10 @@ export default async function HomePage() {
           <div className="mx-auto flex max-w-6xl flex-col items-center justify-between gap-5 md:flex-row lg:px-6">
             <div>
               <p className="luxury-label">Produit vedette</p>
-              <h2 className="mt-2 font-serif text-2xl">{featured.name_fr} | The Essence of Moonlight</h2>
+              <h2 className="mt-2 font-serif text-2xl">{featured.name_fr} | L'essence du clair de lune</h2>
             </div>
             <div className="flex gap-3">
-              <Link href={`/produit/${featured.slug}`} className="border border-white px-5 py-3 text-sm font-semibold">EXPLORE</Link>
+              <Link href={`/produit/${featured.slug}`} className="border border-white px-5 py-3 text-sm font-semibold">Découvrir</Link>
               <AddToCartButton item={{ id: featured.id, slug: featured.slug, name: featured.name_fr, price: featured.price, image_url: featured.image_url, kind: "product" }} />
             </div>
           </div>
@@ -67,7 +67,7 @@ export default async function HomePage() {
       </section>
 
       <section id="collection" className="bg-cream px-4 py-12 lg:px-6">
-        <SectionTitle label="LE CADEAU ULTIME" title="Signature Sets" />
+        <SectionTitle label="LE CADEAU ULTIME" title="Coffrets Signature" />
         <div className="mx-auto mt-10 grid max-w-6xl gap-6 md:grid-cols-3">
           {giftSets.slice(0, 3).map((set) => (
             <article key={set.id}>

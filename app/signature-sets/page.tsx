@@ -7,7 +7,7 @@ export default async function SignatureSetsPage() {
   const sets = await getGiftSets();
   return (
     <main className="bg-cream px-4 py-16 lg:px-8">
-      <SectionTitle label="LE CADEAU ULTIME" title="Signature Sets" copy="Des coffrets pensés pour offrir un rituel complet, luxueux et mémorable." />
+      <SectionTitle label="LE CADEAU ULTIME" title="Coffrets Signature" copy="Des coffrets pensés pour offrir un rituel complet, luxueux et mémorable." />
       <div className="mx-auto mt-14 grid max-w-7xl gap-10">
         {sets.map((set) => (
           <article key={set.id} className="grid gap-8 bg-white p-5 shadow-soft md:grid-cols-[320px_1fr]">

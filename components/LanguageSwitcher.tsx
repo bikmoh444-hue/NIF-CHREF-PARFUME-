@@ -1,15 +1,26 @@
 "use client";
 
-import { Languages } from "lucide-react";
 import { useLang } from "@/lib/i18n";
 
 export default function LanguageSwitcher() {
   const { lang, setLang } = useLang();
+
   return (
-    <div className="inline-flex items-center border border-line text-xs">
-      <Languages className="mx-1.5 h-3.5 w-3.5 text-gold" />
-      <button className={`px-1.5 py-1.5 ${lang === "fr" ? "bg-ink text-white" : ""}`} onClick={() => setLang("fr")}>FR</button>
-      <button className={`px-1.5 py-1.5 ${lang === "ar" ? "bg-ink text-white" : ""}`} onClick={() => setLang("ar")}>AR</button>
+    <div className="flex border border-line text-[11px] font-semibold uppercase tracking-[0.12em]">
+      <button
+        type="button"
+        className={`px-2.5 py-2 ${lang === "fr" ? "bg-ink text-white" : "text-ink hover:bg-cream"}`}
+        onClick={() => setLang("fr")}
+      >
+        FR
+      </button>
+      <button
+        type="button"
+        className={`px-2.5 py-2 ${lang === "ar" ? "bg-ink text-white" : "text-ink hover:bg-cream"}`}
+        onClick={() => setLang("ar")}
+      >
+        AR
+      </button>
     </div>
   );
 }
